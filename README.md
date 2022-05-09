@@ -18,7 +18,10 @@ Cranfield UKSEDS Avionics Repository
 
 2. For mics
     The pin layout is as follows (Ignore the second mic attached to same rpi as we want redundancy)
+    
     ![sensors_pi_i2s_stereo_bb](https://user-images.githubusercontent.com/36783388/167426438-50c923f8-f044-47dd-bc2d-52750e9ad158.png)
+    
+    
     For Setup:
         1. Download i2s module to the pi using "sudo pip3 install --upgrade adafruit-python-shell" followed by "wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/i2smic.py"
         2. Run the downloaded file using: "sudo python3 i2smic.py"
