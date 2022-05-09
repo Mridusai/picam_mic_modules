@@ -1,14 +1,7 @@
 # picam_mic_modules
 Cranfield UKSEDS Avionics Repository
 
-1. For the picams
-    As of now, To obtain synchronised stereo is still a wip
-    Working on stereo individually
-    Script for 20 minutes of burst image captures found in pi_cam.py
-    Bursts captured at 40fps, stored in buffer memory (1 second stored at a time) and then flushed to SD card
-    Script currently runs for 20 minutes
-    To make this launch at startup, init.sh needs to be added to cron scheduler
-    Steps for this:
+1. For the picams, as of now, synchronised stereo is still a wip. Currently working on stereo individually. Script for 20 minutes of burst image captures found in pi_cam.py. Bursts captured at 40fps, stored in buffer memory (1 second stored at a time) and then flushed to SD card. Script currently runs for 20 minutes. To make this launch at startup, init.sh needs to be added to cron scheduler and the steps for this are:
     1. Download and copy this rep to home directory
     2. Make init.sh executable with "chmod 755 init.sh" after copying this rep to the pi
     3. cd to home by running "cd"
