@@ -9,7 +9,7 @@ Cranfield UKSEDS Avionics Repository
     Script currently runs for 20 minutes
     To make this launch at startup, init.sh needs to be added to cron scheduler
     Steps for this:
-      1. Download and copy this rep to home directory
+        1. Download and copy this rep to home directory
       2. Make init.sh executable with "chmod 755 init.sh" after copying this rep to the pi
       3. cd to home by running "cd"
       4. Create cron logs folder with "mkdir logs"
@@ -18,7 +18,7 @@ Cranfield UKSEDS Avionics Repository
 
 2. For mics
     For Setup:
-        1. Download i2s module to the pi using "sudo pip3 install --upgrade adafruit-python-shell" followed by "wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/i2smic.py"
+      1. Download i2s module to the pi using "sudo pip3 install --upgrade adafruit-python-shell" followed by "wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/i2smic.py"
         2. Run the downloaded file using: "sudo python3 i2smic.py"
         3. While running i2smic.py, there is an option to load this module at startup. Press y to auto load at boot
         4. **From here on, work still needs to be done** 
