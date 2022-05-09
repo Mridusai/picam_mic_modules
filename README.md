@@ -10,18 +10,18 @@ Cranfield UKSEDS Avionics Repository
     To make this launch at startup, init.sh needs to be added to cron scheduler
     Steps for this:
         1. Download and copy this rep to home directory
-      2. Make init.sh executable with "chmod 755 init.sh" after copying this rep to the pi
-      3. cd to home by running "cd"
-      4. Create cron logs folder with "mkdir logs"
-      5. Using ssh or with external monitor open crontab with "sudo crontab -e"]
-      6. Make the init.sh file to launch at startup with the command "@reboot sh /home/pi/picam_mic_modules/init.sh >/home/pi/logs/cronlog 2>&1"
+        2. Make init.sh executable with "chmod 755 init.sh" after copying this rep to the pi
+        3. cd to home by running "cd"
+        4. Create cron logs folder with "mkdir logs"
+        5. Using ssh or with external monitor open crontab with "sudo crontab -e"]
+        6. Make the init.sh file to launch at startup with the command "@reboot sh /home/pi/picam_mic_modules/init.sh >/home/pi/logs/cronlog 2>&1"
 
 2. For mics
-    For Setup:
+    Steps for setting up on a rpi
       1. Download i2s module to the pi using "sudo pip3 install --upgrade adafruit-python-shell" followed by "wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/i2smic.py"
-        2. Run the downloaded file using: "sudo python3 i2smic.py"
-        3. While running i2smic.py, there is an option to load this module at startup. Press y to auto load at boot
-        4. **From here on, work still needs to be done** 
+      2. Run the downloaded file using: "sudo python3 i2smic.py"
+      3. While running i2smic.py, there is an option to load this module at startup. Press y to auto load at boot
+      4. **From here on, work still needs to be done** 
             1. Script similar to pi_cam.py is written for mics and is uploaded as mic.py
             2. Still need to figure out how to run this at startup as our way of running stuff on cron makes running scripts sequential
             3. Code still needs testing with current mics
